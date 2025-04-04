@@ -6,13 +6,13 @@ class CyberSecurityChatbot
 {
     static void Main()
     {
-        // Step 1: Play Voice Greeting
+        
         PlayGreeting();
 
-        // Step 2: Display ASCII Art
+        
         DisplayAsciiArt();
 
-        // Step 3: Start Chatbot Interaction
+        
         StartChat();
     }
 
@@ -47,9 +47,7 @@ class CyberSecurityChatbot
         Console.ResetColor();
     }
 
-    /// <summary>
-    /// Starts the chatbot by asking for the user's name and beginning interaction.
-    /// </summary>
+
     static void StartChat()
     {
         Console.Write("\nHello! What's your name? ");
@@ -64,9 +62,7 @@ class CyberSecurityChatbot
         Chat(userName);
     }
 
-    /// <summary>
-    /// Handles user interaction and chatbot responses.
-    /// </summary>
+
     static void Chat(string userName)
     {
         Console.WriteLine("\nYou can ask me about cybersecurity topics like phishing, passwords, and safe browsing.");
