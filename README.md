@@ -6,15 +6,16 @@ class CyberSecurityChatbot
 {
     static void Main()
     {
-        
+        // Step 1: Play Voice Greeting
         PlayGreeting();
 
-        
+        // Step 2: Display ASCII Art
         DisplayAsciiArt();
 
-        
+        // Step 3: Start Chatbot Interaction
         StartChat();
     }
+
 
     static void PlayGreeting()
     {
@@ -30,6 +31,8 @@ class CyberSecurityChatbot
             Console.ResetColor();
         }
     }
+
+
     static void DisplayAsciiArt()
     {
         Console.ForegroundColor = ConsoleColor.Cyan;
@@ -44,7 +47,9 @@ class CyberSecurityChatbot
         Console.ResetColor();
     }
 
-    
+    /// <summary>
+    /// Starts the chatbot by asking for the user's name and beginning interaction.
+    /// </summary>
     static void StartChat()
     {
         Console.Write("\nHello! What's your name? ");
@@ -52,7 +57,7 @@ class CyberSecurityChatbot
 
         if (string.IsNullOrWhiteSpace(userName))
         {
-            userName = "User"; 
+            userName = "User"; // Default name if empty
         }
 
         Console.WriteLine($"\nWelcome, {userName}! I'm the Cybersecurity Awareness Bot.");
